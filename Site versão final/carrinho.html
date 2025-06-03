@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Outlet das Tintas</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Outlet das Tintas</h1>
+                <p>Sua loja especializada em pintura</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="carrinho.html" class="active"><i class="fas fa-shopping-cart"></i> <span class="cart-count">1</span>Carrinho</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container carrinho-page">
+        <div class="carrinho-header">
+            <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+            <p>Você tem <span class="items-count">1 item</span> no carrinho</p>
+        </div>
+
+        <div class="carrinho-container">
+            <div class="itens-carrinho">
+                <div class="carrinho-item">
+                    <div class="item-imagem">
+                        <img src="imagem/download.webp" alt="Coral Rende Muito 18L">
+                    </div>
+                    <div class="item-detalhes">
+                        <h3>Coral Rende Muito Branco 18L</h3>
+                        <p class="item-cod">Código: CR1800</p>
+                        <p class="item-desc">Tinta acrílica de alto rendimento para paredes internas e externas</p>
+                        <div class="item-acoes">
+                            <button class="btn-remover"><i class="fas fa-trash"></i> Remover</button>
+                            <button class="btn-favoritar"><i class="far fa-heart"></i> Favoritar</button>
+                        </div>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="btn-quantidade minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="btn-quantidade plus">+</button>
+                    </div>
+                    <div class="item-preco">
+                        <p class="preco-unitario">R$429,90/un</p>
+                        <p class="preco-total">R$429,90</p>
+                    </div>
+                </div>
+
+                <div class="carrinho-item">
+                    <div class="item-imagem">
+                        <img src="imagem/matte.webp" alt="Coral Decora Matte 3,6L">
+                    </div>
+                    <div class="item-detalhes">
+                        <h3>Coral Decora Matte Branco 3,6L</h3>
+                        <p class="item-cod">Código: CD360</p>
+                        <p class="item-desc">Tinta com acabamento matte perfeito para ambientes internos</p>
+                        <div class="item-acoes">
+                            <button class="btn-remover"><i class="fas fa-trash"></i> Remover</button>
+                            <button class="btn-favoritar"><i class="far fa-heart"></i> Favoritar</button>
+                        </div>
+                    </div>
+                    <div class="item-quantidade">
+                        <button class="btn-quantidade minus">-</button>
+                        <input type="number" value="2" min="1">
+                        <button class="btn-quantidade plus">+</button>
+                    </div>
+                    <div class="item-preco">
+                        <p class="preco-unitario">R$169,90/un</p>
+                        <p class="preco-total">R$339,80</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resumo-carrinho">
+                <h3>Resumo do Pedido</h3>
+                <div class="resumo-linha">
+                    <span>Subtotal (3 itens)</span>
+                    <span>R$769,70</span>
+                </div>
+                <div class="resumo-linha">
+                    <span>Frete</span>
+                    <span class="frete-gratis">Grátis</span>
+                </div>
+                <div class="resumo-linha desconto">
+                    <span>Desconto</span>
+                    <span>-R$50,00</span>
+                </div>
+                <div class="resumo-total">
+                    <span>Total</span>
+                    <span class="total-valor">R$719,70</span>
+                </div>
+                <p class="frete-info"><i class="fas fa-truck"></i> Frete grátis para compras acima de R$500,00</p>
+                <a href="checkout.html" class="btn btn-finalizar">Finalizar Compra</a>
+                <a href="catalogo.html" class="btn-continuar">Continuar Comprando</a>
+
+                <div class="cupom-desconto">
+                    <h4><i class="fas fa-tag"></i> Tem um cupom de desconto?</h4>
+                    <div class="cupom-input">
+                        <input type="text" placeholder="Digite seu cupom">
+                        <button class="btn-cupom">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="pagamento-seguro">
+                    <p><i class="fas fa-lock"></i> Compra 100% segura</p>
+                    <div class="bandeiras">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-discover"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recomendados-carrinho">
+            <h3>Quem comprou este produto também levou:</h3>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <img src="imagem/rolo.webp" alt="Atlas Rolo">
+                    <h3>Atlas Rolo antigota 23cm</h3>
+                    <p class="preco">R$28,90</p>
+                    <button class="btn-add">Adicionar ao carrinho</button>
+                </div>
+                <div class="produto-card">
+                    <img src="imagem/fia.webp" alt="Fita Crepe">
+                    <h3>Adere fita crepe larga</h3>
+                    <p class="preco">R$13,90</p>
+                    <button class="btn-add">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-col">
+                <h3>Outlet das Tintas</h3>
+                <p>Sua loja especializada em tintas e acessórios para pintura com os melhores preços da região.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Termos e condições</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="contato.html">Suporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <p>@outletdastintas.pprudente</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Outlet das Tintas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
